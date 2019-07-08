@@ -11,6 +11,7 @@ function toggleView(id, elem) {
   }
   if (image.style.display === "none") {
     image.style.display = "block";
+    elem.parentElement.style.right = "26px";
     elem.classList.add("darkElem");
     elem.classList.remove("lightElem");
     elem.childNodes[0].classList.add("darkElem");
@@ -18,6 +19,7 @@ function toggleView(id, elem) {
   }
   else {
     image.style.display = "none";
+    elem.parentElement.style.right = "1px";
     elem.classList.add("lightElem");
     elem.classList.remove("darkElem");
     elem.childNodes[0].classList.add("lightElem");
@@ -88,7 +90,7 @@ function bigger(id) {
   let width = pict.style.width;                         // "100px"
   let truncWidth = width.substr(0, width.length - 2);   // "100"
   let value = Number(truncWidth);                       // 100
-  value = 1.2 * value;                                  // 120
+  value = 1.5 * value;                                  // 120
   let newWidth = value.toString();                      // "120"
   newWidth = newWidth + "px";                           // "120px"
   pict.style.width = newWidth;
@@ -101,7 +103,7 @@ function smaller(id) {
   let width = pict.style.width;
   let truncWidth = width.substr(0, width.length - 2);
   let value = Number(truncWidth);
-  value = value / 1.2;
+  value = value / 1.5;
   let newWidth = value.toString();
   newWidth = newWidth + "px";
   pict.style.width = newWidth;
@@ -145,11 +147,10 @@ function createSizer(imageUrl, hiderText, hiderTop, size, placeholder) {
 
   // create hider text
   let hiderTextElem = document.createElement("hider-text");
-  let text = "<br />";
+  let text = "";
   for (i = 0; i < hiderText.length; ++i) {
     text += hiderText[i] + "<br />";
   }
-  text += "<br />";
   hiderTextElem.appendChild(document.createTextNode(hiderText));
   hiderTextElem.innerHTML = text;
   hiderContainer.appendChild(hiderTextElem);

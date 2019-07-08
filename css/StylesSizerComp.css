@@ -4,8 +4,8 @@
   display: block;
   border: 1px solid black;
   position: absolute; /*top set in createSizer*/
-  right: 10px;
-  z-index: 5;
+  right: 26px;
+  z-index: 0;
   width: 1.25em;
   background-color: slategray;
   color: lightyellow;
@@ -57,7 +57,7 @@
 
 #github image-container {
   float: right;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
   border: 1px solid black;
 }
 
