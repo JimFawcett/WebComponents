@@ -11,8 +11,8 @@ body {
   border-right: 10px solid #eee;
 }
 
-.codeSnap {
-  font-family: Consolas, Courier New, Courier, monospace;
+#github .codeSnap {
+  font-family: Consolas, Courier New, Courier, monospace, sans-serif;
   font-size: small;
   font-weight: bold;
   background-color: #eee;
@@ -416,7 +416,7 @@ under-construction {
 }
 
 #github .lightItem {
-  background-color: bisque;
+  background-color: cornsilk;
   padding: 0.2em 0.5em;
   border: 1px solid black;
   margin: 5px 0px;
@@ -460,6 +460,42 @@ under-construction {
 #github comment-block {
   display: block;
   margin: 5px 15px;
+}
+
+#github .lightItem {
+  background-color: cornsilk;
+  padding: 0.2em 0.5em;
+  border: 1px solid saddlebrown;
+  margin: 5px 0px;
+  color: saddlebrown;
+}
+
+#github div.lightItem a {
+  color: saddlebrown;
+}
+
+#github .darkItem {
+  background-color: saddlebrown;
+  color: white;
+  padding: 0.2em 0.5em;
+  border: 1px solid black;
+  margin: 5px 0px;
+  color: cornsilk;
+}
+
+#github div.darkItem a {
+  color: cornsilk;
+}
+
+#github .darkItem a {
+  color: white;
+}
+
+#github flex-break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
 }
 
 

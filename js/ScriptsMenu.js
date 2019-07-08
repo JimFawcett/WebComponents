@@ -14,40 +14,40 @@ function initializeMenu() {
 
   var topMenu = document.getElementsByTagName("nav");
   topMenu[0].innerHTML = "<div class='navbar'>\
-    <a href='../index.html' class='menuItem'>Home</a>\
-    <a href='../Repositories.html' class='menuItem'>Repositories</a>\
+    <a href='index.html' class='menuItem'>Home</a>\
+    <a href='Repositories.html' class='menuItem notice'>Repositories</a>\
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Notes &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../DesignProcess.html'>Design Process</a>\
-        <a href='../ProjectsList.html'>Project suggestions</a>\
+        <a href='DesignProcess.html'>Design Process</a>\
+        <a href='ProjectsList.html'>Project suggestions</a>\
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Blogs &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../Blog.html'>First&nbsp;Things</a>\
+        <a href='Blog.html'>First&nbsp;Things</a>\
         <div style='padding:0px 10px; margin:0px; font-size:small;'>--&nbsp;Design&nbsp;--------------&nbsp;</div>\
-        <a href='../BlogDesign.html'>SW&nbsp;Design</a>\
-        <a href='../BlogPrinciples.html'>Design&nbsp;Principles</a>\
-        <a href='../BlogOOD.html'>OO&nbsp;Design</a>\
-        <a href='../BlogObjectModels.html'>Object&nbsp;Models</a>\
-        <a href='../BlogGlobals.html'>Scopes&nbsp;&amp;&nbsp;Global&nbsp;Data&nbsp;&nbsp;</a>\
+        <a href='BlogDesign.html'>SW&nbsp;Design</a>\
+        <a href='BlogPrinciples.html'>Design&nbsp;Principles</a>\
+        <a href='BlogOOD.html'>OO&nbsp;Design</a>\
+        <a href='BlogObjectModels.html'>Object&nbsp;Models</a>\
+        <a href='BlogGlobals.html'>Scopes&nbsp;&amp;&nbsp;Global&nbsp;Data&nbsp;&nbsp;</a>\
         <div style='padding:0px 10px; margin:0px; font-size:small;'>--&nbsp;Engineering&nbsp;SW&nbsp;---</div>\
-        <a href='../BlogOCD.html'>Concept&nbsp;Document</a>\
-        <a href='../BlogTesting.html'>SW&nbsp;Testing</a>\
-        <a href='../SummerReading.html'>Summer&nbsp;Reading</a>\
+        <a href='BlogOCD.html'>Concept&nbsp;Document</a>\
+        <a href='BlogTesting.html'>SW&nbsp;Testing</a>\
+        <a href='SummerReading.html'>Summer&nbsp;Reading</a>\
         <div style='padding:0px 10px; margin:0px; font-size:small;'>--&nbsp;Software&nbsp;Sys&nbsp;------</div>\
-        <a href='../BlogStructure.html'>SW&nbsp;Structure</a>\
-        <a href='../BlogMessagePassingComm.html'>Msg-Passing&nbsp;Comm</a>\
-        <a href='../BlogActiveObjects.html'>Active&nbsp;Objects</a>\
+        <a href='BlogStructure.html'>SW&nbsp;Structure</a>\
+        <a href='BlogMessagePassingComm.html'>Msg-Passing&nbsp;Comm</a>\
+        <a href='BlogActiveObjects.html'>Active&nbsp;Objects</a>\
         <div style='padding:0px 10px; margin:0px; font-size:small;'>--&nbsp;Reusable&nbsp;Pkgs&nbsp;----</div>\
-        <a href='../BlogNoSql.html'>noSQL&nbsp;Database</a>\
-        <a href='../BlogParser.html'>Parsing</a>\
-        <a href='../BlogCodeAnalyzer.html'>Code&nbsp;Analyzer</a>\
-        <a href='../BlogMTree.html'>M-ary&nbsp;Trees</a>\
-        <a href='../BlogGraph.html'>Directed&nbsp;Graphs</a>\
-        <a href='../BlogFileSystem.html'>C++&nbsp;FileSystem</a>\
+        <a href='BlogNoSql.html'>noSQL&nbsp;Database</a>\
+        <a href='BlogParser.html'>Parsing</a>\
+        <a href='BlogCodeAnalyzer.html'>Code&nbsp;Analyzer</a>\
+        <a href='BlogMTree.html'>M-ary&nbsp;Trees</a>\
+        <a href='BlogGraph.html'>Directed&nbsp;Graphs</a>\
+        <a href='BlogFileSystem.html'>C++&nbsp;FileSystem</a>\
         <div style='padding:0px 10px; margin:0px; font-size:small;'>&nbsp;</div>\
       </div>\
     </div>\
@@ -59,15 +59,16 @@ function initializeMenu() {
         <a href='http://cpprocks.com/files/c++11-regex-cheatsheet.pdf'>C++11 regex</a>\
         <a href='https://github.com/joshnh/Git-Commands'>git commands</a>\
         <a class='disable' href='UMLDiagrams.html'>UML Diagrams</a>\
-        <a href='../Resources/VisualStudioHelpSlides.pdf'>Visual Studio Help Slides</a>\
-        <a href='../SummerReading.html'>Summer Reading</a>\
+        <a href='Resources/VisualStudioHelpSlides.pdf'>Visual Studio Help Slides</a>\
+        <a href='SummerReading.html'>Summer Reading</a>\
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Prog Lang &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../LangCpp.html'>C++</a>\
-        <a class='disable' href='#'>C#</a>\
+        <a href='LangCpp.html'>C++</a>\
+        <a href='LangCSharp.html'>C#</a>\
+        <a href='LangPowerShell'>PowerShell</a>\
         <a class='disable' href='#'>HTML</a>\
         <a class='disable' href='#'>CSS</a>\
         <a class='disable' href='#'>JavaScript</a>\
@@ -80,16 +81,17 @@ function initializeMenu() {
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>About &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../JimFawcett.html'>Jim Fawcett</a>\
-        <a href='../Help.html'>Help</a>\
-        <a href='../ToDo.html'>ToDo</a>\
+        <a href='JimFawcett.html'>Jim Fawcett</a>\
+        <a href='Help.html'>Help</a>\
+        <a href='ToDo.html'>ToDo</a>\
         <a href='#' onclick='toggleNavKeys()'>Toggle Nav Keys</a>\
-        <a href='../SiteDesign.html'>Site Design</a>\
-        <a class='border' href='../index.html'>L1 Site Home</a>\
-        <a class='border' href='../Repositories.html'>L2 Repository&nbsp;webpage</a>\
-        <a class='border' href='../LangCpp.html'>L2 C++&nbsp;webpage</a>\
+        <a href='SiteDesign.html'>Site Design</a>\
+        <a href='BookDesignCourse.html'>Design Course</a>\
+        <a class='border' href='index.html'>L1 Site Home</a>\
+        <a class='border' href='Repositories.html'>L2 Repository&nbsp;webpage</a>\
+        <a class='border' href='LangCpp.html'>L2 C++&nbsp;webpage</a>\
         <a href='https://github.com/JimFawcett'>Repositories&nbsp;code</a>\
-        <a href='../SiteMap.html'>Site Map</a>\
+        <a href='SiteMap.html'>Site Map</a>\
       </div>\
     </div>\
     <button class='pageScroll' onclick='scrollPageTop()'>Top</button>\
@@ -259,6 +261,7 @@ function mouseAction(event) {
     }
     else {
       //toggleNavKeys();
+      toggleNavKeys();
     }
   }
 }
