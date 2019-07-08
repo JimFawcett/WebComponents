@@ -26,6 +26,7 @@ function initializeMenu() {
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Blogs &#9662;</button>\
       <div class='dropdown-content'>\
+        <a href='Blogs.html'>Annotated&nbsp;Summary&nbsp;of&nbsp;Blogs&nbsp;&nbsp;</a>\
         <a href='Blog.html'>First&nbsp;Things</a>\
         <div style='padding:0px 10px; margin:0px; font-size:small;'>--&nbsp;Design&nbsp;--------------&nbsp;</div>\
         <a href='BlogDesign.html'>SW&nbsp;Design</a>\
@@ -66,7 +67,6 @@ function initializeMenu() {
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>C++ Lang &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='LangCpp.html'>C++</a>\
         <a href='DesignNote-CvsCpp.html'>C vs C++</a>\
         <a href='DesignNote-GettingStartedWithCpp.html'>Getting Started</a>\
         <a href='Resources/CppModels.pdf'>C++ models - pdf</a>\
@@ -90,23 +90,6 @@ function initializeMenu() {
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
-      <button class='dropbutton'>Code Snaps &#9662;</button>\
-      <div class='dropdown-content'>\
-        <a href='CodeSnap-PointersAndReferences.cpp.html'>PointersAndReferences</a>\
-        <a href='CodeSnap-ClassAnatomy.h.html'>ClassAnatomy</a>\
-        <a href='CodeSnap-Strings.h.html'>Strings</a>\
-        <a href='CodeSnap-Inheritance.h.html'>Inheritance</a>\
-        <a href='CodeSnap-CompoundObjects.cpp.html'>CompoundObjects</a>\
-        <a href='CodeSnap-Templates.h.html'>Templates</a>\
-        <a href='CodeSnap-FunctionObjects.h.html'>FunctionObjects</a>\
-        <a href='CodeSnap-Lambdas.cpp.html'>Lambdas</a>\
-        <a href='CodeSnap-LambdaCapture.cpp.html'>LambdaCapture</a>\
-        <a href='CodeSnap-Converter.h.html'>Converter</a>\
-        <a href='CodeSnap-BlockingQueue.h.html'>BlockingQueue</a>\
-        <a href='CodeSnap-TestUtilities.h.html'>TestUtilities</a>\
-     </div>\
-    </div>\
-    <div class='dropdown menuItem'>\
       <button class='dropbutton'>About &#9662;</button>\
       <div class='dropdown-content'>\
         <a href='JimFawcett.html'>Jim Fawcett</a>\
@@ -114,7 +97,6 @@ function initializeMenu() {
         <a href='ToDo.html'>ToDo</a>\
         <a href='#' onclick='toggleNavKeys()'>Toggle Nav Keys</a>\
         <a href='SiteDesign.html'>Site Design</a>\
-        <a href='BookDesignCourse.html'>Design Course</a>\
         <a class='border' href='index.html'>L1 Site Home</a>\
         <a class='border' href='Repositories.html'>L2 Repository&nbsp;webpage</a>\
         <a class='border' href='LangCpp.html'>L2 C++&nbsp;webpage</a>\

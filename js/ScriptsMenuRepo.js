@@ -40,48 +40,41 @@ function initializeMenu() {
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Components &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../JimFawcett.github.io/CppBlockingQueue.html'>CppBlockingQueue</a>\
-        <a href='../JimFawcett.github.io/FileManager.html'>File Manager</a>\
-        <a href='../JimFawcett.github.io/CppProperties.html'>CppProperties</a>\
-        <a href='../JimFawcett.github.io/ThreadPool.html'>ThreadPool</a>\
-        <a href='../JimFawcett.github.io/Process.html'>Process</a>\
-        <a href='../JimFawcett.github.io/CppConcurrentFileAccess.html'>CppConcurrentFileAccess</a>\
-        <a href='../JimFawcett.github.io/CppLexicalScanner.html'>CppLexicalScanner</a>\
-        <a href='../JimFawcett.github.io/RetryWrapper.html'>RetryWrapper</a>\
-        <a href='../JimFawcett.github.io/WebComponents.html'>WebComponents</a>\
+        <a href='CppBlockingQueue.html'>CppBlockingQueue</a>\
+        <a class='disable' href='FileManager.html'>File Manager</a>\
+        <a class='disable' href='CppProperty.html'>CppProperty</a>\
+        <a class='disable' href='ThreadPool.html'>ThreadPool</a>\
+        <a class='disable' href='Process.html'>Process</a>\
+        <a class='disable' href='RetryWrapper.html'>RetryWrapper</a>\
+        <a class='disable' href='WebComponents.html'>WebComponents</a>\
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Libraries &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../JimFawcett.github.io/FileSystem.html'>FileSystem-Windows</a>\
-        <a class='disable' href='../JimFawcett.github.io/FileSystem.html'>FileSystem-Linux</a>\
-        <a href='../JimFawcett.github.io/Sockets.html'>Sockets-Windows</a>\
-        <a class='disable' href='../JimFawcett.github.io/Sockets.html'>Sockets-Linux</a>\
-        <a href='../JimFawcett.github.io/XmlDocument.html'>XmlDocument</a>\
-        <a href='../JimFawcett.github.io/CppGraph.html'>CppGraph</a>\
+        <a href='FileSystem.html'>FileSystem-Windows</a>\
+        <a class='disable' href='FileSystem.html'>FileSystem-Linux</a>\
+        <a href='Sockets.html'>Sockets-Windows</a>\
+        <a class='disable' href='Sockets.html'>Sockets-Linux</a>\
+        <a href='XmlDocument.html'>XmlDocument</a>\
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Projects &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../JimFawcett.github.io/SitePages.html'>SitePages</a>\
-        <a href='../JimFawcett.github.io/CppParser.html'>CppParser</a>\
-        <a href='../JimFawcett.github.io/CppCodeAnalyzer.html'>CppCodeAnalyzer</a>\
-        <a href='../JimFawcett.github.io/CsDependencyAnalysis.html'>CsDependencyAnalysis</a>\
-        <a href='../JimFawcett.github.io/CppCommWithFileXfer.html'>CppCommWithFileXfer</a>\
-        <a href='../JimFawcett.github.io/CppHttpClientServer.html'>CppHttpClientServer</a>\
+        <a class='disable' href='MsgPassingComm.html'>MsgPassingComm</a>\
+        <a class='disable' href='CppCodeAnalyzer.html'>CppCodeAnalyzer</a>\
+        <a class='disable' href='CsDependencyAnalysis.html'>CsDependencyAnalysis</a>\
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>Demos &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../JimFawcett.github.io/CppBasicDemos.html'>C++&nbsp;Basic&nbsp;Demos</a>\
-        <a href='../JimFawcett.github.io/STR.html'>STR&nbsp;Value&nbsp;Type</a>\
-        <a href='../JimFawcett.github.io/STL-Containers.html'>STL-Containers</a>\
-        <a href='../JimFawcett.github.io/IOStreams.html'>IOStreams</a>\
-        <a href='../JimFawcett.github.io/CppThreads.html'>CppThreads</a>\
-        <a href='../JimFawcett.github.io/ProcAndThreads.html'>ProcsAndThreads</a>\
+        <a href='STR.html'>STR&nbsp;Value&nbsp;Type</a>\
+        <a href='STL-Containers.html'>STL-Containers</a>\
+        <a href='IOStreams.html'>IOStreams</a>\
+        <a class='disable' href='CppThreads.html'>CppThreads</a>\
+        <a class='disable' href='ProcAndThreads.html'>ProcsAndThreads</a>\
       </div>\
     </div>\
     <div class='dropdown menuItem'>\
@@ -95,17 +88,16 @@ function initializeMenu() {
     <div class='dropdown menuItem'>\
       <button class='dropbutton'>About &#9662;</button>\
       <div class='dropdown-content'>\
-        <a href='../JimFawcett.github.io/JimFawcett.html'>Jim Fawcett</a>\
-        <a href='../JimFawcett.github.io/Help.html'>Help</a>\
-        <a href='../JimFawcett.github.io/ToDo.html'>ToDo</a>\
+        <a href='JimFawcett.html'>Jim Fawcett</a>\
+        <a href='Help.html'>Help</a>\
+        <a href='ToDo.html'>ToDo</a>\
         <a href='#' onclick='toggleNavKeys()'>Toggle Nav Keys</a>\
-        <a href='../JimFawcett.github.io/SiteDesign.html'>Site Design</a>\
-        <a href='../JimFawcett.github.io/BookDesignCourse.html'>Design Course</a>\
-        <a class='border' href='../JimFawcett.github.io/index.html'>L1 Site Home</a>\
-        <a class='border' href='../JimFawcett.github.io/Repositories.html'>L2 Repository&nbsp;webpage</a>\
-        <a class='border' href='../JimFawcett.github.io/LangCpp.html'>L2 C++&nbsp;webpage</a>\
+        <a href='SiteDesign.html'>Site Design</a>\
+        <a class='border' href='index.html'>L1 Site Home</a>\
+        <a class='border' href='Repositories.html'>L2 Repository&nbsp;webpage</a>\
+        <a class='border' href='LangCpp.html'>L2 C++&nbsp;webpage</a>\
         <a href='https://github.com/JimFawcett'>Repositories&nbsp;code</a>\
-        <a href='../JimFawcett.github.io/SiteMap.html'>Site Map</a>\
+        <a href='SiteMap.html'>Site Map</a>\
       </div>\
     </div>\
     <button class='pageScroll' onclick='scrollPageTop()'>Top</button>\

@@ -1,19 +1,32 @@
 
 /* SizerScriptComp.js */
 
-function toggleView(id) {
+/*---------------------------------------------------------
+*  Show or hide image
+*/
+function toggleView(id, elem) {
   let image = document.getElementById(id);
   if (image === null) {
     return;
   }
   if (image.style.display === "none") {
     image.style.display = "block";
+    elem.classList.add("darkElem");
+    elem.classList.remove("lightElem");
+    elem.childNodes[0].classList.add("darkElem");
+    elem.childNodes[0].classList.remove("lightElem");
   }
   else {
     image.style.display = "none";
+    elem.classList.add("lightElem");
+    elem.classList.remove("darkElem");
+    elem.childNodes[0].classList.add("lightElem");
+    elem.childNodes[0].classList.remove("darkElem");
   }
 }
-
+/*---------------------------------------------------------
+*  Get distance of elem top from window top
+*/
 function getTop(elem) {
   let yPos = 0;
   while (elem) {
@@ -22,7 +35,9 @@ function getTop(elem) {
   }
   return yPos;
 }
-
+/*---------------------------------------------------------
+*  Returns sizer child of elem
+*/
 function getSizer(elem) {
   let children = elem.getElementsByTagName("sizer-container");
   if (children.length === 1) {
@@ -30,7 +45,10 @@ function getSizer(elem) {
   }
   return null;
 }
-
+/* --------------------------------------------------------
+ *  Compute sizer height as sum of its children's heights
+ *  - expects elem to be a sizer element
+ */
 function getSizerHeight(elem) {
   let elems = elem.childNodes;
   let ht = 0;
@@ -41,7 +59,12 @@ function getSizerHeight(elem) {
   }
   return ht;
 }
-
+/*---------------------------------------------------------
+ *  Debugging function:
+ *  - trying to place sizers so they don't overlap
+ *    when windows are hidden
+ *  - for now, setting fixed positions
+ */
 function sizerPositions() {
   let images = document.getElementsByTagName("image-wrapper");
   let bottom = 0;
@@ -57,7 +80,9 @@ function sizerPositions() {
     alert(bottom);
   }
 }
-
+/*---------------------------------------------------------
+*  Make image larger
+*/
 function bigger(id) {
   let pict = document.getElementById(id);
   let width = pict.style.width;                         // "100px"
@@ -68,7 +93,9 @@ function bigger(id) {
   newWidth = newWidth + "px";                           // "120px"
   pict.style.width = newWidth;
 }
-
+/*---------------------------------------------------------
+*  Make image smaller
+*/
 function smaller(id) {
   let pict = document.getElementById(id);
   let width = pict.style.width;
@@ -78,12 +105,25 @@ function smaller(id) {
   let newWidth = value.toString();
   newWidth = newWidth + "px";
   pict.style.width = newWidth;
-
-  //sizerPositions();
+  //----------------------
+  // Debug test
+  // sizerPositions();
 }
-
+/*---------------------------------------------------------
+*  Global id suffix - needed because we may have more
+*                     than one sizer 
+*/
 var idCount = 0;
 
+/*---------------------------------------------------------
+*  Assemble image sizer and attach to placeholder
+*  - imageUrl:    relative path to image
+*  - hiderText:   caption for sizer on hider bar
+*  - hiderTop:    fixed vertical distance from window top
+*                 if zero sizer aligned with image top
+*  - size:        width of image container
+*  - placeholder: id of div that defines location of image in page
+*/
 function createSizer(imageUrl, hiderText, hiderTop, size, placeholder) {
 
   let imageContainerId = "imageContainerId" + (++idCount).toString();
@@ -101,7 +141,7 @@ function createSizer(imageUrl, hiderText, hiderTop, size, placeholder) {
 
   // create hider container
   let hiderContainer = document.createElement("hider-container");
-  hiderContainer.addEventListener("click", function () { toggleView(imageContainerId); });
+  hiderContainer.addEventListener("click", function () { toggleView(imageContainerId, this); });
 
   // create hider text
   let hiderTextElem = document.createElement("hider-text");

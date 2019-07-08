@@ -1,13 +1,13 @@
 ﻿/* StylesComponents.css */
 
-sizer-container {
+#github sizer-container {
   display: block;
   border: 1px solid black;
   position: absolute; /*top set in createSizer*/
   right: 10px;
   z-index: 5;
-  width: 2.0em;
-  background-color: black;
+  width: 1.25em;
+  background-color: slategray;
   color: lightyellow;
   cursor: pointer;
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -18,45 +18,56 @@ sizer-container {
   text-align: center;
 }
 
-clickable-container {
+#github clickable-container {
   clear: both;
   float: right;
 }
 
-bigger-button {
+#github bigger-button {
   display: block;
   vertical-align: central;
   border: 1px solid white;
 }
 
-smaller-button {
+#github smaller-button {
   display: block;
   vertical-align: central;
   border: 1px solid white;
 }
 
-hider-container {
+#github hider-container {
   display: block;
   border: 1px solid yellow;
 }
 
-hider-text {
+#github hider-text {
   /*transform:rotate(-90deg); transform-origin:55px 50px;*/
   /*height:1500px;*/
   color: lightyellow;
-  background-color: black;
-  font-weight: bold;
+  background-color: slategray;
+  font-weight: normal;
+  font-family: Consolas, monospace;
 }
 
-image-wrapper {
+#github image-wrapper {
   clear: both;
   float: right;
   padding-left: 15px;
 }
 
-image-container {
+#github image-container {
   float: right;
   padding-left: 15px;
   border: 1px solid black;
+}
+
+#github .lightElem {
+  background-color: lightyellow;
+  color: slategray;
+}
+
+#github .darkElem {
+  background-color: slategray;
+  color: lightyellow;
 }
 
