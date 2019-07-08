@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>WebWidgets</title>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="Software Engineering course notes. Code Samples. Software Links" />
+  <meta name="keywords" content="Lecture, Notes, Code, Syracuse,University" />
+  <meta name="Author" content="Jim Fawcett" />
+  <meta name="Author" content="James Fawcett" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <script src="js/ScriptsTemplate.js"></script>
+  <script src="js/ScriptsKeyboard.js"></script>
+  <script src="js/ScriptsMenu.js"></script>
+  <script src="js/ScriptsComponents.js"></script>
+  <link rel="stylesheet" href="css/StylesTemplate.css" />
+  <link rel="stylesheet" href="css/StylesMenu.css" />
+  <link rel="stylesheet" href="css/StylesComponents.css" />
+  <script>
+    function toggleView()
+    {
+      //alert("toggled");
+      let image = document.getElementById('f1');
+      if (image.style.right > "0") {
+        image.style.right = "-5000px";
+        let button = document.getElementById('b3');
+        button.innerHTML = "<"
+      }
+      else {
+        image.style.right = "25px";
+        let button = document.getElementById('b3');
+        button.innerHTML = ">"
+      }
+
+      let button1 = document.getElementById('b1');
+      if (button1.style.right > "0")
+        button1.style.right = "-5000px";
+      else
+        button1.style.right = "60px";
+
+      let button2 = document.getElementById('b2');
+      if (button2.style.right > "0")
+        button2.style.right = "-5000px";
+      else
+        button2.style.right = "90px";
+    }
+    function bigger() {
+      let pict = document.getElementById("f1");
+      let width = pict.style.width;
+      let truncWidth = width.substr(0, width.length - 2);
+      let value = Number(truncWidth);
+      value = 1.2 * value;
+      let newWidth = value.toString();
+      newWidth = newWidth + "px";
+      pict.style.width = newWidth;
+    }
+
+    function smaller() {
+      let pict = document.getElementById("f1");
+      let width = pict.style.width;
+      let truncWidth = width.substr(0, width.length - 2);
+      let value = Number(truncWidth);
+      value = value / 1.2;
+      let newWidth = value.toString();
+      newWidth = newWidth + "px";
+      pict.style.width = newWidth;
+    }
+  </script>
+</head>
+<body id="github" onload="initializeMenu()" style="border:5px solid red;">
+  <nav>
+    <div id="navbar"></div>
+  </nav>
+  <a id="Next" href="Project2-S2019.htm">N</a>
+  <a id="Prev" href="Project4-S2019.htm">P</a>
+
+  <navKeysContainer>
+    <navKey onclick="scrollPageTop()">T</navKey>
+    <navKey onclick="scrollPageBottom()">B</navKey>
+    <navKey onclick="helpWin()">H</navKey>
+    <navKey onclick="loadPrev()">P</navKey>
+    <navKey onclick="loadNext()">N</navKey>
+  </navKeysContainer>
+
+  <header>
+    <h2 id="title">WebWidgets</h2>
+    <div id="pagedate">
+      Version 1.0<br />
+      Due Date: Friday, July 5th, 2019
+    </div>
+    <!--<a href="../code/Project1HelpS2019">Project #1 helper files</a>-->
+  </header>
+  <button id="b1" style="position:fixed; right:90px; top:150px;" onclick="bigger()">+</button>
+  <button id="b2" style="position:fixed; right:60px; top:150px;" onclick="smaller()">-</button>
+  <button id="b3" style="position:fixed; right:25px; top:150px;" onclick="toggleView()">></button>
+  <div id="f1" class="border" style="position:absolute; z-index:-1; top:180px; right:25px; width:600px;">
+    <img src="Pictures/AsyncMsgPassComm.jpg" style="width:100%;" />
+  </div>
+  <!--<div id="f1" class="border" style="position:absolute; z-index:-1; top:150px; right:25px; width:500px;">
+    <spacer-10></spacer-10>
+    <img src="Pictures/AsyncMsgPassComm.jpg" style="width:100%;" />
+  </div>-->
+  <spacer-15></spacer-15>
+  <!--<div class="left" id="Fig1" style="padding:25px;"></div>
+  <spacer-25></spacer-25>
+  <info-bar></info-bar>
+  <script>makeSizer("Pictures/AsyncMsgPassComm.jpg", 600, "Fig1", "Async Msg-passing Comm")</script>-->
+  <div style="position:relative; z-index:-3">
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    This is some bland and very boring text.
+    <spacer-10></spacer-10>
+  </div>
+</body>
+</html>

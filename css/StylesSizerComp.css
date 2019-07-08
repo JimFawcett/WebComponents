@@ -1,0 +1,62 @@
+﻿/* StylesComponents.css */
+
+sizer-container {
+  display: block;
+  border: 1px solid black;
+  position: absolute; /*top set in createSizer*/
+  right: 10px;
+  z-index: 5;
+  width: 2.0em;
+  background-color: black;
+  color: lightyellow;
+  cursor: pointer;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  vertical-align: central;
+  text-align: center;
+}
+
+clickable-container {
+  clear: both;
+  float: right;
+}
+
+bigger-button {
+  display: block;
+  vertical-align: central;
+  border: 1px solid white;
+}
+
+smaller-button {
+  display: block;
+  vertical-align: central;
+  border: 1px solid white;
+}
+
+hider-container {
+  display: block;
+  border: 1px solid yellow;
+}
+
+hider-text {
+  /*transform:rotate(-90deg); transform-origin:55px 50px;*/
+  /*height:1500px;*/
+  color: lightyellow;
+  background-color: black;
+  font-weight: bold;
+}
+
+image-wrapper {
+  clear: both;
+  float: right;
+  padding-left: 15px;
+}
+
+image-container {
+  float: right;
+  padding-left: 15px;
+  border: 1px solid black;
+}
+
