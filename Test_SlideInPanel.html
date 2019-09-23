@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <!--
+   - Test_SlideInPanel.html - test slide in
+   - ver 1.0 - 03 August 2019
+   - Jim Fawcett, Syracuse University
+  -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="Software Projects. Code Samples. Software Links" />
+  <meta name="keywords" content="Repository, Design, Code" />
+  <meta name="Author" content="Jim Fawcett" />
+  <meta name="Author" content="James Fawcett" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Test Slide-in Panel</title>
+  <script src="js/ScriptsUtilities.js"></script>
+  <script src="js/ScriptsTemplate.js"></script>
+  <script src="js/ScriptsKeyboard.js"></script>
+  <script src="js/ScriptsMenuRepo.js"></script>
+  <script src="js/ScriptsSlideInPanel.js"></script>
+  <link rel="stylesheet" href="css/StylesTemplate.css" />
+  <link rel="stylesheet" href="css/StylesMenu.css" />
+  <link rel="stylesheet" href="css/StylesSlideInPanel.css" /> 
+</head>
+<body id="github" onload="initializeMenu()">
+
+  <navKeys-Container>
+    <nav-Key id="sKey" onclick="toggleSwipeEvents()">S</nav-Key>
+    <nav-Key id="rKey" onclick="location.reload()">R</nav-Key>
+    <nav-Key id="tKey" onclick="scrollPageTop()">T</nav-Key>
+    <nav-Key id="bKey" onclick="scrollPageBottom()">B</nav-Key>
+    <nav-Key id="hKey" onclick="helpWin()">H</nav-Key>
+    <nav-Key id="pKey" onclick="loadPrev()">P</nav-Key>
+    <nav-Key id="nKey" onclick="loadNext()">N</nav-Key>
+  </navKeys-Container>
+
+  <nav>
+    <div id="navbar"></div>
+  </nav>
+
+  <header>
+    <a class="repoLink" href="Tests.html">Tests.html</a>
+    <hgroup id="pagetitle">
+      <h1 id="title">Test Slide-in Panel</h1>
+    </hgroup>
+  </header>
+
+  <spacer-10></spacer-10>
+  <hr class="spread" />
+
+  <div id="slideInPanel" class="sidepanel">
+    Slide-in Panel
+    <hr />
+    yada yada yad yada yada yada
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    <spacer-10></spacer-10>
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    <spacer-10></spacer-10>
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    yada yada yad yada yada yad yada yada yad yada yada yad yada yada yad
+    <spacer-15></spacer-15>
+  </div>
+
+  <button class="toggleBtn" onclick="slideIn.toggleSlideIn()">☰ Toggle Sidepanel</button>
+  <h2>Collapsed Sidepanel</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
+  <spacer-15></spacer-15>
+  <indent-block>
+    <h4>Reference:<span-1em></span-1em><span class="smaller normal"><a href="https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp">w3schools.com - howto sidepanel</a></span></h4>
+  </indent-block>
+  <script>
+    /* Required only for Edge */
+    slideIn.state = "open";
+    slideIn.toggleSlideIn();
+  </script>
+  <info-bar></info-bar>
+</body>
+</html>

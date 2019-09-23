@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <!--
+   - Tests.html - Widget development and test
+   - ver 1.0 - 10 June 2019
+   - Jim Fawcett, Emeritus Teaching Professor, Syracuse University
+  -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="Software Projects. Code Samples. Software Links" />
+  <meta name="keywords" content="Repository, Design, Code" />
+  <meta name="Author" content="Jim Fawcett" />
+  <meta name="Author" content="James Fawcett" />
+  <title>Tests</title>
+  <script src="js/ScriptsUtilities.js"></script>
+  <script src="js/ScriptsTemplate.js"></script>
+  <script src="js/ScriptsKeyboard.js"></script>
+  <script src="js/ScriptsMenuRepo.js"></script>
+  <link rel="stylesheet" href="css/StylesTemplate.css" />
+  <link rel="stylesheet" href="css/StylesMenu.css" />
+  <style>
+    summary {
+      padding: 3px 0px 5px 0px;
+    }
+  </style>
+</head>
+<body id="github" onload="initializeMenu()">
+
+  <navKeys-Container>
+    <nav-Key id="sKey" onclick="toggleSwipeEvents()">S</nav-Key>
+    <nav-Key id="rKey" onclick="location.reload()">R</nav-Key>
+    <nav-Key id="tKey" onclick="scrollPageTop()">T</nav-Key>
+    <nav-Key id="bKey" onclick="scrollPageBottom()">B</nav-Key>
+    <nav-Key id="hKey" onclick="helpWin()">H</nav-Key>
+    <nav-Key id="pKey" onclick="loadPrev()">P</nav-Key>
+    <nav-Key id="nKey" onclick="loadNext()">N</nav-Key>
+  </navKeys-Container>
+
+  <nav>
+    <div id="navbar"></div>
+  </nav>
+  <a id="Next" href="Process.html">N</a>
+  <a id="Prev" href="CppProperties.html">P</a>
+
+  <header>
+    <a class="repoLink" href="https://github.com/JimFawcett/Tests">Tests code</a>
+    <hgroup id="pagetitle">
+      <h1 id="title">Tests&nbsp;&nbsp;Repository</h1>
+      <!--<h2 class="indent" id="subtitle">Tasks</h2>-->
+    </hgroup>
+  </header>
+
+  <!--<indent-block style="width:70%; display:block;">
+    <img class="strip-photo" src="Pictures/TextFinderCodeStrip.JPG" alt="Text Finder Code Strip" width="100%" />
+    <div align="center">TextFinder code fragment</div>
+  </indent-block>-->
+
+  <hr class="spread" />
+  <indent-block>
+    Test tests were developed for repository documentation and for the StoryTeller web app.  Some, but not
+    all have migrated with small modifications into those places.
+    <spacer-15></spacer-15>
+    <indent-block>
+      <a href="Test_SlideInPanel.html">Test_SlideInPanel</a><br />
+      click button to slide in panel of text
+      <spacer-10></spacer-10>
+      <a href="Test_Draggable.html">Test_Draggable</a><br />
+      drag div or image with mouse or touch
+      <spacer-10></spacer-10>
+      <a href="Test_SplitterBar.html">Test_SplitterBar</a><br />
+      resize left and right panel widths with splitter bar
+      <spacer-10></spacer-10>
+      <a href="Test_Sizer.html">Test_Sizer.html</a><br />
+      Widget for expanding images
+      <spacer-10></spacer-10>
+      <a href="Test_SlideShow.html">Test_SlideShow.html</a><br />
+      Widget for showing sequence of slides
+      <spacer-10></spacer-10>
+      <a href="TestFileLoad.html">TestFileLoad</a><br />
+      Test loading files with JavaScript File API and ajax
+      <spacer-10></spacer-10>
+    </indent-block>
+  </indent-block>
+  <spacer-15></spacer-15>
+  <!--<img class="strip-photo" src="Pictures/CampusAtNight.jpg" alt="campus at night" />-->
+
+  <info-bar></info-bar>
+</body>
+</html>
