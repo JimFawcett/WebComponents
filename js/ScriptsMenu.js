@@ -296,15 +296,21 @@ function scrollPageBottom() {
 *  navKeys are TBHNP keys at bottom right of each page
 */
 function togglenavKeys() {
-  var nkc = document.getElementsByTagName("navKeys-Container");
-  var tog = window.getComputedStyle(nkc[0], null).getPropertyValue("display");
-  if (tog === "none") {
-    nkc[0].style.display = "inline";
-    window.localStorage.setItem("navKeyState", "show");  // persist change across pages
+  try {
+    var nkc = document.getElementsByTagName("navKeys-Container");
+    var tog = window.getComputedStyle(nkc[0], null).getPropertyValue("display");
+    if (tog === "none") {
+      nkc[0].style.display = "inline";
+      window.localStorage.setItem("navKeyState", "show");  // persist change across pages
+    }
+    else {
+      nkc[0].style.display = "none";
+      window.localStorage.setItem("navKeyState", "hide");  // persist chage across pages
+    }
   }
-  else {
-    nkc[0].style.display = "none";
-    window.localStorage.setItem("navKeyState", "hide");  // persist chage across pages
+  catch (err) {
+    console.log('exception: ' + err);
+    return;
   }
 }
 //----< setnavKeys display >-----------------------------------------
@@ -328,6 +334,7 @@ function setnavKeys() {
     }
   }
   catch (err) {
+    console.log('exception: ' + err);
     return;
   }
 }
@@ -336,17 +343,23 @@ function setnavKeys() {
 *  Image sizers appear to the right of some images
 */
 function toggleImageSizer() {
-  var nkc = document.getElementsByTagName("sizer-Container");
-  var tog = window.getComputedStyle(nkc[0], null).getPropertyValue("display");
-  for (let i = 0; i < nkc.length; ++i) {
-    if (tog === "none") {
-      nkc[i].style.display = "inline";
-      window.localStorage.setItem("imageSizerState", "show");  // persist change across pages
+  try {
+    var nkc = document.getElementsByTagName("sizer-Container");
+    var tog = window.getComputedStyle(nkc[0], null).getPropertyValue("display");
+    for (let i = 0; i < nkc.length; ++i) {
+      if (tog === "none") {
+        nkc[i].style.display = "inline";
+        window.localStorage.setItem("imageSizerState", "show");  // persist change across pages
+      }
+      else {
+        nkc[i].style.display = "none";
+        window.localStorage.setItem("imageSizerState", "hide");  // persist chage across pages
+      }
     }
-    else {
-      nkc[i].style.display = "none";
-      window.localStorage.setItem("imageSizerState", "hide");  // persist chage across pages
-    }
+  }
+  catch (err) {
+    console.log('exception: ' + err);
+    return;
   }
 }
 //----< set image sizer display >-----------------------------------------
@@ -374,6 +387,7 @@ function setImageSizer() {
     }
   }
   catch (err) {
+    console.log('exception: ' + err);
     return;
   }
 }

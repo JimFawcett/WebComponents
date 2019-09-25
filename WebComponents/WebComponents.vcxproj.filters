@@ -7,5 +7,14 @@
     <None Include="..\js\ScriptsSplitterBar.js" />
     <None Include="..\css\StylesSplitterBar.css" />
     <None Include="..\Test_SplitterBar.html" />
+    <None Include="..\Test_Draggable.html" />
+    <None Include="..\Test_SlideInPanel.html" />
+    <None Include="..\Test_SlideShow.html" />
+    <None Include="..\css\StylesSlideInPanel.css" />
+    <None Include="..\css\StylesSlideShow.css" />
+    <None Include="..\js\ScriptsSlideInPanel.js" />
+    <None Include="..\js\ScriptsSlideShow.js" />
+    <None Include="..\js\ScriptsMenu.js" />
+    <None Include="..\js\ScriptsMenuRepo.js" />
   </ItemGroup>
 </Project>
