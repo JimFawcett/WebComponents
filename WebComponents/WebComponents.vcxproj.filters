@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\Test_ImageSizer.html" />
+    <None Include="..\css\StylesImageSizer.css" />
+    <None Include="..\js\ScriptsImageSizer.js" />
+    <None Include="..\js\ScriptsSplitterBar.js" />
+    <None Include="..\css\StylesSplitterBar.css" />
+    <None Include="..\Test_SplitterBar.html" />
+  </ItemGroup>
+</Project>

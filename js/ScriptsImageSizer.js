@@ -7,6 +7,8 @@
  */
 
 function onLoadSplitter(figStr) {
+  const second = document.getElementById(figStr + "-second");
+  second.style.width = '300px';
   dragElement(document.getElementById(figStr + "-seperator"), "H", figStr);
 }
 
@@ -25,7 +27,7 @@ function dragElement(element, direction, figStr) {
 
   // function that will be called whenever the down event of the mouse is raised
   function dragMouseDown(e) {
-    console.log('entered dragMouseDown');
+    console.log("entered dragMouseDown");
     drag.x = unify(e).clientX;
     drag.y = unify(e).clientY;
     document.onmousemove = onMouseMove;
@@ -47,19 +49,19 @@ function dragElement(element, direction, figStr) {
     const offsetTop = element.offsetTop;
 
 
-    const first = document.getElementById(figStr + "-first");
+    //const first = document.getElementById(figStr + "-first");
     const second = document.getElementById(figStr + "-second");
-    let firstWidth = first.offsetWidth;
+    //let firstWidth = first.offsetWidth;
     let secondWidth = second.offsetWidth;
     if (direction === "H") // Horizontal
     {
       element.style.left = offsetLeft + delta.x + "px";
-      firstWidth += delta.x;
+      //firstWidth += delta.x;
       secondWidth -= delta.x;
     }
     drag.x = currentX;
     drag.y = currentY;
-    first.style.width = firstWidth + "px";
+    //first.style.width = firstWidth + "px";
     second.style.width = secondWidth + "px";
   }
 }
