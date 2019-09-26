@@ -16,5 +16,8 @@
     <None Include="..\js\ScriptsSlideShow.js" />
     <None Include="..\js\ScriptsMenu.js" />
     <None Include="..\js\ScriptsMenuRepo.js" />
+    <None Include="..\Test_Photo.html" />
+    <None Include="..\CSS\StylesPhoto.css" />
+    <None Include="..\js\ScriptsPhoto.js" />
   </ItemGroup>
 </Project>

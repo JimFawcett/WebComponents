@@ -124,17 +124,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\css\StylesImageSizer.css" />
+    <None Include="..\CSS\StylesPhoto.css" />
     <None Include="..\css\StylesSlideInPanel.css" />
     <None Include="..\css\StylesSlideShow.css" />
     <None Include="..\css\StylesSplitterBar.css" />
     <None Include="..\js\ScriptsImageSizer.js" />
     <None Include="..\js\ScriptsMenu.js" />
     <None Include="..\js\ScriptsMenuRepo.js" />
+    <None Include="..\js\ScriptsPhoto.js" />
     <None Include="..\js\ScriptsSlideInPanel.js" />
     <None Include="..\js\ScriptsSlideShow.js" />
     <None Include="..\js\ScriptsSplitterBar.js" />
     <None Include="..\Test_Draggable.html" />
     <None Include="..\Test_ImageSizer.html" />
+    <None Include="..\Test_Photo.html" />
     <None Include="..\Test_SlideInPanel.html" />
     <None Include="..\Test_SlideShow.html" />
     <None Include="..\Test_SplitterBar.html" />

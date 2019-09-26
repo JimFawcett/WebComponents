@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebComponents", "WebComponents\WebComponents.vcxproj", "{652AD088-D3C9-4F98-8079-2FA998835719}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AFD496D9-9BC3-497A-BD69-ABEB38DAC147}"
+	ProjectSection(SolutionItems) = preProject
+		ScriptsPhoto.js = ScriptsPhoto.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
