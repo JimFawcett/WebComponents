@@ -135,12 +135,15 @@
     <None Include="..\js\ScriptsSlideInPanel.js" />
     <None Include="..\js\ScriptsSlideShow.js" />
     <None Include="..\js\ScriptsSplitterBar.js" />
+    <None Include="..\ScriptsDraggable.js" />
+    <None Include="..\ScriptsPhoto.js" />
     <None Include="..\Test_Draggable.html" />
     <None Include="..\Test_ImageSizer.html" />
     <None Include="..\Test_Photo.html" />
     <None Include="..\Test_SlideInPanel.html" />
     <None Include="..\Test_SlideShow.html" />
     <None Include="..\Test_SplitterBar.html" />
+    <None Include="StylesDraggable.css" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

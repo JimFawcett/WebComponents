@@ -2,7 +2,7 @@
 <html>
 <head>
   <!--
-   - Test_Sizer.html - test image sizer
+   - Test_Draggable.html - test dragging with mouse and touch
    - ver 1.0 - 03 August 2019
    - Jim Fawcett, Syracuse University
   -->
@@ -12,110 +12,17 @@
   <meta name="Author" content="Jim Fawcett" />
   <meta name="Author" content="James Fawcett" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Test Draggable Image</title>
+  <title>Test Draggable</title>
   <script src="js/ScriptsUtilities.js"></script>
   <script src="js/ScriptsTemplate.js"></script>
   <script src="js/ScriptsKeyboard.js"></script>
   <script src="js/ScriptsMenuRepo.js"></script>
   <script src="js/ScriptsSlideShow.js"></script>
+  <script src="js/ScriptsDraggable.js"></script>
   <link rel="stylesheet" href="css/StylesTemplate.css" />
   <link rel="stylesheet" href="css/StylesMenu.css" />
   <link rel="stylesheet" href="css/StylesSlideShow.css" />
-  <script>
-    function doDrag(containerId, itemId) {
-      var dragItem = document.querySelector(itemId);
-      var container = document.querySelector(containerId);
-
-      var active = false;
-      var currentX;
-      var currentY;
-      var initialX;
-      var initialY;
-      var xOffset = 0;
-      var yOffset = 0;
-
-      container.addEventListener("touchstart", dragStart, false);
-      container.addEventListener("touchend", dragEnd, false);
-      container.addEventListener("touchmove", drag, false);
-
-      container.addEventListener("mousedown", dragStart, false);
-      container.addEventListener("mouseup", dragEnd, false);
-      container.addEventListener("mousemove", drag, false);
-
-      function unify(e) {
-        return e.changedTouches ? e.changedTouches[0] : e;
-      }
-
-      function dragStart(e) {
-        initialX = unify(e).clientX - xOffset;
-        initialY = unify(e).clientY - yOffset;
-
-        if (e.target === dragItem) {
-          active = true;
-        }
-      }
-
-      function dragEnd(e) {
-        initialX = currentX;
-        initialY = currentY;
-
-        active = false;
-      }
-
-      function drag(e) {
-        if (active) {
-      
-          e.preventDefault();
-
-          currentX = unify(e).clientX - initialX;
-          currentY = unify(e).clientY - initialY;
-          xOffset = currentX;
-          yOffset = currentY;
-
-          setTranslate(currentX, currentY, dragItem);
-        }
-      }
-
-      function setTranslate(xPos, yPos, el) {
-        el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
-      }
-    }
-  </script>
-  <style>
-    #github #container {
-      /*width: 100%;*/
-      margin: 25px 15px;
-      height: 200px;
-      background-color: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border-radius: 7px;
-      border:1px solid black;
-      touch-action: none;
-    }
-    #github #item {
-      width: 50px;
-      height: 50px;
-      background-color: black;
-      border: 2px solid rgba(136, 136, 136, .5);
-      border-radius: 20%;
-      touch-action: none;
-      user-select: none;
-    }
-    #github #item:active {
-      background-color: #ccc;
-    }
-    #github #item:hover {
-      cursor: grab;
-      border-width: 2px;
-    }
-    #github span-1em {
-      display:inline-block;
-      width:1.5em;
-    }
-  </style>
+  <link rel="stylesheet" href="css/StylesDraggable.css" />
 </head>
 <body id="github" onload="initializeMenu()">
 
@@ -155,7 +62,7 @@
     <div id="outerContainer">
       <div id="container">
         <div id="item">
-
+          
         </div>
       </div>
     </div>
