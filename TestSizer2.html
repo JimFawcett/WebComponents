@@ -9,10 +9,10 @@
   <meta name="keywords" content="Lecture, Notes, Code, Syracuse,University" />
   <meta name="Author" content="Jim Fawcett" />
   <meta name="Author" content="James Fawcett" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <script src="js/ScriptsUtilities.js"></script>
   <script src="js/ScriptsTemplate.js"></script>
   <script src="js/ScriptsKeyboard.js"></script>
-  <script src="js/ScriptsMenuRepo.js"></script>
+  <script src="js/ScriptsMenuJsRepo.js"></script>
   <script src="js/ScriptsSizerComp.js"></script>
   <link rel="stylesheet" href="css/StylesTemplate.css" />
   <link rel="stylesheet" href="css/StylesMenu.css" />
@@ -25,13 +25,15 @@
   <!--<a id="Next" href="Project2-S2019.htm">N</a>
   <a id="Prev" href="Project4-S2019.htm">P</a>-->
 
-  <navKeysContainer>
-    <navKey onclick="scrollPageTop()">T</navKey>
-    <navKey onclick="scrollPageBottom()">B</navKey>
-    <navKey onclick="helpWin()">H</navKey>
-    <navKey onclick="loadPrev()">P</navKey>
-    <navKey onclick="loadNext()">N</navKey>
-  </navKeysContainer>
+  <navKeys-Container>
+    <nav-Key id="sKey" onclick="toggleSwipeEvents()">S</nav-Key>
+    <nav-Key id="rKey" onclick="location.reload()">R</nav-Key>
+    <nav-Key id="tKey" onclick="scrollPageTop()">T</nav-Key>
+    <nav-Key id="bKey" onclick="scrollPageBottom()">B</nav-Key>
+    <nav-Key id="hKey" onclick="helpWin()">H</nav-Key>
+    <nav-Key id="pKey" onclick="loadPrev()">P</nav-Key>
+    <nav-Key id="nKey" onclick="loadNext()">N</nav-Key>
+  </navKeys-Container>
 
   <header>
     <h2 id="title">TestSizer2</h2>
